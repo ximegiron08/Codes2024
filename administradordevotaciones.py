@@ -8,3 +8,4 @@ if cantidad ==13:
     print("tu persona con dpi",dpi, "para presidente votarás por", presidente," y para alcalde votarás por", alcalde)
 else:
     print("dpi invalido")
+    print("intente de nuevo")
