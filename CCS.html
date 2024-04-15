@@ -1,0 +1,131 @@
+HTML Basics
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Página con Estructura Semántica Avanzada</title>
+    <style>
+        /* Estilos básicos para mejorar la visualización */
+        header,
+        nav,
+        section,
+        article,
+        aside,
+        footer {
+            border: 1px solid grey;
+            margin: 10px;
+            padding: 10px;
+        }
+        body {
+                font-family: Arial, sans-serif; /*establece una fuente legible para la pagina*/
+                background-color: #f4f4f4; /*un fondo gris claro para toda la pagina*/
+                color: #333 /*texto gris oscuro para mejorar la legibilidad*/
+        }
+
+        h1,
+        h2,
+        h3 {
+            color:#0056b3; /* un color azul profundo para los encabezados para que resalten*/
+        }
+
+        a { 
+            color:#0087cc; /* un azul mas claro para los enlaces*/
+            text-decoration: none; /*elimina el subrayado de los enlaces */
+        }
+
+        a:hover {
+            text-decoration: underline; /* agrega un subrayado cuando pasas el mouse por los enlaces */
+        }
+
+        nav ul { 
+            list-style-type: none; /* elimina los puntos de lista predeterminados*/
+            padding: 0;
+            background-color: #333; /*le da a la barra de navegacion un fondo oscuro */
+        }
+
+        nav li {
+            display: inline; /*alinea los enlaces en una fila */
+            margin-right: 20px; /*pone espacio entre cada enlace */
+        }
+
+        nav a {
+            color: white; /*hace que el texto sea blanco para que sea legible */
+            font-weight: bold; /*hace que el texto sea negrita */
+        }
+
+        nav a:hover {
+            color:#ffcc00; /*cambia el color del enlace a amarillo cuando se pasa el mouse*/
+        }
+
+        section {
+            background-color: white; /* establece un fondo blanco para las secciones*/
+            border-radius: 8px; /*redondea las esquinas*/
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*añade una sombra ligera para dar profundidad*/
+        }
+
+        article { 
+            margin-bottom: 20px; /*añade espacio debajo de cada articulo*/
+        }
+
+        article:last-child { 
+            margin-bottom: 0; /*elimina el margen inferior del último artículo*/
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Nombre de Mi Sitio Web</h1>
+        <p>Descripción breve del sitio.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobrenosotros">Sobre Nosotros</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            12:24
+        </ul>
+    </nav>
+    <!-- Sección de inicio -->
+    <section id="inicio">
+        <h2>Bienvenidos a Nuestro Sitio Web</h2>
+        <p>Esta es la introducción a nuestro sitio y lo que ofrecemos.</p>
+    </section>
+    <!-- Sección sobre nosotros -->
+    <section id="sobrenosotros">
+        <h2>Sobre Nosotros</h2>
+        <article>
+            <h3>Nuestra Historia</h3>
+            <p>Texto sobre la historia de la compañía.</p>
+        </article>
+        <article>
+            <h3>Nuestro Equipo</h3>
+            <!-- Sección de productos -->
+            <section id="productos">
+                <h2>Nuestros Productos</h2>
+                <article>
+                    <h3>Producto 1</h3>
+                    <p>Descripción de este producto.</p>
+                </article>
+                <article>
+                    <h3>Producto 2</h3>
+                    <p>Descripción de este producto.</p>
+                </article>
+            </section>
+            <!-- Sección de contacto -->
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <p>Información sobre cómo contactarnos.</p>
+            </section>
+            <aside>
+                <h2>Noticias Recientes</h2>
+                <p>Algunas noticias breves o enlaces a blogs.</p>
+            </aside>
+            <footer>
+                <p>Derechos de autor Nombre de Mi Sitio Web</p>
+            </footer>
+</body>
+
+</html>
