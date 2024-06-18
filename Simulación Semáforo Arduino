@@ -1,0 +1,26 @@
+const int rojoPin = 13;  
+const int amarilloPin = 12;  
+const int verdePin = 11;  
+
+void setup() {
+  pinMode(rojoPin, OUTPUT);
+  pinMode(amarilloPin, OUTPUT);
+  pinMode(verdePin, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(verdePin, HIGH);
+  digitalWrite(amarilloPin, LOW);
+  digitalWrite(rojoPin, LOW);
+  delay(4000);  
+  
+  digitalWrite(verdePin, LOW);
+  digitalWrite(amarilloPin, HIGH);
+  digitalWrite(rojoPin, LOW);
+  delay(1000);  
+  
+  digitalWrite(verdePin, LOW);
+  digitalWrite(amarilloPin, LOW);
+  digitalWrite(rojoPin, HIGH);
+  delay(6000);  
+}
