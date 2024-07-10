@@ -1,0 +1,23 @@
+// Configuración inicial
+void setup() {
+  // Inicia la comunicación serial a 9600 baudios
+  Serial.begin(9600);
+}
+
+// Bucle principal
+void loop() {
+  // Lee el valor analógico del pin A0 (asumiendo que hay un sensor de luz conectado)
+  int valorLuz = analogRead(A0);
+
+  // Convierte el valor analógico a un valor de voltaje
+  float voltajeLuz = valorLuz * (5.0 / 1023.0);
+
+  // Calcula la intensidad de la luz en miliamperios (mA)
+  float intensidadLuz = voltajeLuz / 10.0;
+
+  // Envia el valor de intensidad de la luz por el puerto serial
+  Serial.println(intensidadLuz);
+
+  // Espera 1 milisegundo antes de la próxima lectura
+  delay(1);
+}
